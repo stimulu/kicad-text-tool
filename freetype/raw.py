@@ -13,11 +13,10 @@ import platform
 from ctypes import *
 import ctypes.util
 
-import freetype
-from freetype.ft_types import *
-from freetype.ft_enums import *
-from freetype.ft_errors import *
-from freetype.ft_structs import *
+from .ft_types import *
+from .ft_enums import *
+from .ft_errors import *
+from .ft_structs import *
 
 # First, look for a bundled FreeType shared object on the top-level of the
 # installed freetype-py module.
@@ -29,10 +28,10 @@ elif system == 'Darwin':
 else:
     library_name = 'libfreetype.so'
 
-filename = os.path.join(os.path.dirname(freetype.__file__), library_name)
+# filename = os.path.join(os.path.dirname(freetype.__file__), library_name)
 
 # If no bundled shared object is found, look for a system-wide installed one.
-if not os.path.exists(filename):
+if True:
     # on windows all ctypes does when checking for the library
     # is to append .dll to the end and look for an exact match
     # within any entry in PATH.

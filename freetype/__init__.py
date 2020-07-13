@@ -19,7 +19,7 @@ import io
 import sys
 from ctypes import *
 
-from freetype.raw import *
+from .raw import *
 from .ft_structs import *
 
 # Hack to get unicode class in python3
