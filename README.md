@@ -8,6 +8,10 @@ You need freetype on your system.
 This is slow. It varies from font to font, and with the length of the text.  
 This is so slow you may want to stop it. There is no way to do that and keep your unsaved modifications. Save your work before starting the plugin. And start by testing a font with one or two char.
 
+Text zones are likely to break with zones refill.  
+Text zones are likely to break between work session.  
+Add you text at the very last moment before plotting.  
+
 ## Installation 
 Clone or unzip this repository in a KiCad plugin folder :  
 
